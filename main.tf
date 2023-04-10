@@ -17,6 +17,11 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
   tunnel_id  = cloudflare_tunnel.tunnel_1.id
 
   config {
+
+    warp_routing {
+      enabled = true
+    }
+
     ingress_rule {
       hostname = var.application_domain
       service  = "ssh://localhost:22"
