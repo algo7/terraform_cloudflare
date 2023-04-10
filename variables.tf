@@ -25,6 +25,6 @@ variable "application_name" {
 
 
 variable "application_domain" {
-  description = "Cloudflare Access Application Domain"
+  description = "Cloudflare Access Application Domain (ex: tunnel.example.com)"
   type        = string
 }
