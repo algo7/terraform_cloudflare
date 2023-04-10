@@ -1,6 +1,6 @@
 /**
 * ## Description
-* Creates Cloudflare Tunnel and Access Application
+* Creates Cloudflare Tunnel for SSH and Access Application
 * This project uses R2 as the backend as it is also compatible with S3.
 * Refer to config.r2.backend.example for detailed backend configuration.
 * Initialize the backend with `terraform init -backend-config=./config.r2.tfbackend` (remember to change the file name)

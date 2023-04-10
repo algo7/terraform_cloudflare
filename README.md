@@ -1,5 +1,5 @@
 ## Description
-Creates Cloudflare Tunnel and Access Application
+Creates Cloudflare Tunnel for SSH and Access Application
 This project uses R2 as the backend as it is also compatible with S3.
 Refer to config.r2.backend.example for detailed backend configuration.
 Initialize the backend with `terraform init -backend-config=./config.r2.tfbackend` (remember to change the file name)
@@ -52,6 +52,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_application_domain"></a> [application\_domain](#input\_application\_domain) | Cloudflare Access Application Domain (ex: tunnel.example.com) | `string` | n/a | yes |
 | <a name="input_application_name"></a> [application\_name](#input\_application\_name) | Name of the Cloudflare Access Application you want to use to protect the tunnel | `string` | n/a | yes |
+| <a name="input_application_service_token_name"></a> [application\_service\_token\_name](#input\_application\_service\_token\_name) | Name of the service token to use for your Cloudflare Access Application | `string` | n/a | yes |
 | <a name="input_cloudflare_account_id"></a> [cloudflare\_account\_id](#input\_cloudflare\_account\_id) | Cloudflare Account ID | `string` | n/a | yes |
 | <a name="input_cloudflare_api_token"></a> [cloudflare\_api\_token](#input\_cloudflare\_api\_token) | Cloudflare API Token | `string` | n/a | yes |
 | <a name="input_cloudflare_zone_id"></a> [cloudflare\_zone\_id](#input\_cloudflare\_zone\_id) | Cloudflare Zone ID of the domain that will be used for the tunnel | `string` | n/a | yes |

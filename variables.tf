@@ -23,8 +23,12 @@ variable "application_name" {
   type        = string
 }
 
-
 variable "application_domain" {
   description = "Cloudflare Access Application Domain (ex: tunnel.example.com)"
   type        = string
+}
+
+variable "application_service_token_name" {
+  type        = string
+  description = "Name of the service token to use for your Cloudflare Access Application"
 }
