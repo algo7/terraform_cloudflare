@@ -17,3 +17,8 @@ output "service_token" {
   value       = nonsensitive(cloudflare_access_service_token.app_service_token.client_secret)
   description = "Cloudflare Access Application Service Token"
 }
+
+output "service_token_id" {
+  value       = cloudflare_access_service_token.app_service_token.client_id
+  description = "Cloudflare Access Application Service Token ID"
+}
