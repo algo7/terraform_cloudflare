@@ -1,6 +1,22 @@
 /**
 * ## Description
-* Creates CF 0 Trust Tunnel
+* Creates Cloudflare Tunnel and Access Application
+* This project uses R2 as the backend as it is also compatible with S3.
+* Refer to config.r2.backend.example for detailed backend configuration.
+* Initialize the backend with `terraform init -backend-config=./config.r2.tfbackend` (remember to change the file name)
+* ## Prerequisites
+* - Cloudflare Account
+* - Cloudflare Account ID
+* - Cloudflare Zone ID of the domain that will be used for the tunnel
+* - Cloudflare API Token 
+*  - Account Permissions (edit):
+*     1. Access: Service Tokens, 
+*     2. Access: Apps and Policies
+*     3. Cloudflare Tunnel
+*  - Zone Permissions (edit):
+*     1. DNS
+* - Cloudflare R2 Bucket
+* - R2 Access Key and Secret Key with Read/Write permissions
 */
 terraform {
   required_providers {

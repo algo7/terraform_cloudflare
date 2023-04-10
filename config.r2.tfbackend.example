@@ -1,0 +1,11 @@
+access_key             = "your_r2_access_key"
+secret_key             = "your_r2_secret_key"
+key                    = "cf-tunnel/terraform.tfstate"
+bucket                 = "your-r2-bucket-name"
+# This is not used for R2, but is required for S3 backend to work. Has to be a valid AWS region.
+region                 = "us-east-1
+# Don't validate the region, since R2 doesn't use AWS regions. This is required for R2 to work.
+skip_region_validation = true
+endpoint               = "https://<your_cf_account_id>.r2.cloudflarestorage.com"
+# Don't validate the credentials to use the R2 endpoint.
+skip_credentials_validation = true

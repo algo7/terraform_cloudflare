@@ -1,0 +1,6 @@
+---
+# .terraform-docs.yml
+formatter: markdown
+header-from: terraform.tf
+sort:
+  enabled: true
