@@ -9,3 +9,17 @@ resource "cloudflare_tunnel" "tunnel_1" {
   name       = var.tunnel_name
   secret     = random_id.tunnel_secret.hex
 }
+
+
+# Tunnel configuration
+resource "cloudflare_tunnel_config" "tunnel_config_1" {
+  account_id = var.cloudflare_account_id
+  tunnel_id  = cloudflare_tunnel.tunnel_1.id
+
+  config {
+    ingress_rule {
+      hostname = "test"
+      service  = "ssh://localhost:22"
+    }
+  }
+}
