@@ -8,6 +8,11 @@ variable "cloudflare_account_id" {
   type        = string
 }
 
+variable "cloudflare_zone_id" {
+  description = "Cloudflare Zone ID"
+  type        = string
+}
+
 variable "tunnel_name" {
   description = "Cloudflare Tunnel Name"
   type        = string
