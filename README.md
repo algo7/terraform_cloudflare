@@ -35,7 +35,7 @@ No modules.
 | <a name="input_application_name"></a> [application\_name](#input\_application\_name) | Cloudflare Access Application Name | `string` | n/a | yes |
 | <a name="input_cloudflare_account_id"></a> [cloudflare\_account\_id](#input\_cloudflare\_account\_id) | Cloudflare Account ID | `string` | n/a | yes |
 | <a name="input_cloudflare_api_token"></a> [cloudflare\_api\_token](#input\_cloudflare\_api\_token) | Cloudflare API Token | `string` | n/a | yes |
-| <a name="input_cloudflare_zone_id"></a> [cloudflare\_zone\_id](#input\_cloudflare\_zone\_id) | Cloudflare Zone ID | `string` | n/a | yes |
+| <a name="input_cloudflare_zone_id"></a> [cloudflare\_zone\_id](#input\_cloudflare\_zone\_id) | Cloudflare Zone ID of the domain that will be used for the tunnel | `string` | n/a | yes |
 | <a name="input_tunnel_name"></a> [tunnel\_name](#input\_tunnel\_name) | Cloudflare Tunnel Name | `string` | n/a | yes |
 
 ## Outputs

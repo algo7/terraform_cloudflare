@@ -9,7 +9,7 @@ variable "cloudflare_account_id" {
 }
 
 variable "cloudflare_zone_id" {
-  description = "Cloudflare Zone ID"
+  description = "Cloudflare Zone ID of the domain that will be used for the tunnel"
   type        = string
 }
 
