@@ -18,8 +18,13 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
 
   config {
     ingress_rule {
-      hostname = "test"
+      hostname = var.application_domain
       service  = "ssh://localhost:22"
+    }
+
+    # Catch-all rule to return 404
+    ingress_rule {
+      service = "http_status:404"
     }
   }
 }
