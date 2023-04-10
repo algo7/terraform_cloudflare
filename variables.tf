@@ -19,7 +19,7 @@ variable "tunnel_name" {
 }
 
 variable "application_name" {
-  description = "Cloudflare Access Application Name"
+  description = "Name of the Cloudflare Access Application you want to use to protect the tunnel"
   type        = string
 }
 

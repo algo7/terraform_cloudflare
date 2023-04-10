@@ -32,7 +32,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_application_domain"></a> [application\_domain](#input\_application\_domain) | Cloudflare Access Application Domain (ex: tunnel.example.com) | `string` | n/a | yes |
-| <a name="input_application_name"></a> [application\_name](#input\_application\_name) | Cloudflare Access Application Name | `string` | n/a | yes |
+| <a name="input_application_name"></a> [application\_name](#input\_application\_name) | Name of the Cloudflare Access Application you want to use to protect the tunnel | `string` | n/a | yes |
 | <a name="input_cloudflare_account_id"></a> [cloudflare\_account\_id](#input\_cloudflare\_account\_id) | Cloudflare Account ID | `string` | n/a | yes |
 | <a name="input_cloudflare_api_token"></a> [cloudflare\_api\_token](#input\_cloudflare\_api\_token) | Cloudflare API Token | `string` | n/a | yes |
 | <a name="input_cloudflare_zone_id"></a> [cloudflare\_zone\_id](#input\_cloudflare\_zone\_id) | Cloudflare Zone ID of the domain that will be used for the tunnel | `string` | n/a | yes |
