@@ -14,7 +14,7 @@ resource "cloudflare_access_policy" "cf_application_policy" {
   account_id     = var.cloudflare_account_id
   name           = "ServiceAuth"
   precedence     = "1"
-  decision       = "allow"
+  decision       = "non_identity"
 
   include {
     service_token = [cloudflare_access_service_token.app_service_token.id]
