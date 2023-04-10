@@ -17,6 +17,6 @@ resource "cloudflare_access_policy" "cf_application_policy" {
   decision       = "allow"
 
   include {
-    service_token = [cloudflare_access_service_token.cf_service_token.id]
+    service_token = [cloudflare_access_service_token.app_service_token.id]
   }
 }
