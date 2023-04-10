@@ -11,9 +11,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "mybucket"
-    key    = "path/to/my/key"
-    region = "us-east-1"
+    access_key             = var.r2_access_key_id
+    secret_key             = var.r2_secret_access_key
+    key                    = "cf-tunnel/terraform.tfstate"
+    bucket                 = "mybucket"
+    region                 = "us-east-1"
+    skip_region_validation = true
   }
 }
 
