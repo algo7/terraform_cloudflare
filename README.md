@@ -63,6 +63,4 @@ No modules.
 |------|-------------|
 | <a name="output_service_token"></a> [service\_token](#output\_service\_token) | Cloudflare Access Application Service Token |
 | <a name="output_service_token_id"></a> [service\_token\_id](#output\_service\_token\_id) | Cloudflare Access Application Service Token ID |
-| <a name="output_tunnel_cname"></a> [tunnel\_cname](#output\_tunnel\_cname) | CNAME record for accessing the tunnel |
-| <a name="output_tunnel_secret"></a> [tunnel\_secret](#output\_tunnel\_secret) | Cloudflare Tunnel Secret |
 | <a name="output_tunnel_token"></a> [tunnel\_token](#output\_tunnel\_token) | Cloudflare Tunnel Token |
