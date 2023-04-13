@@ -20,11 +20,12 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
 
     origin_request {
       connect_timeout = "20s"
+      no_tls_verify   = true
     }
 
     ingress_rule {
       hostname = var.application_domain
-      service  = "ssh://localhost:22"
+      service  = var.tunnel_service_path
     }
 
     # Catch-all rule to return 404
@@ -32,11 +33,4 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
       service = "http_status:404"
     }
   }
-}
-
-resource "cloudflare_tunnel_route" "example" {
-  account_id = var.cloudflare_account_id
-  tunnel_id  = cloudflare_tunnel.tunnel_1.id
-  network    = "192.0.2.24/32"
-  comment    = "New tunnel route for documentation"
 }

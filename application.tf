@@ -5,7 +5,7 @@ resource "cloudflare_access_application" "cf_application" {
   type                      = "self_hosted"
   session_duration          = "24h"
   auto_redirect_to_identity = false
-  app_launcher_visible      = false
+  app_launcher_visible      = true
 }
 
 
