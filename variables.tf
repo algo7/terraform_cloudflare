@@ -37,3 +37,8 @@ variable "application_service_token_name" {
   type        = string
   description = "Name of the service token to use for your Cloudflare Access Application"
 }
+
+variable "application_allowed_emails" {
+  type        = list(string)
+  description = "List of emails that will be allowed to access the Cloudflare Access Application"
+}

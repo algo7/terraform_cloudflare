@@ -9,7 +9,7 @@ resource "cloudflare_access_application" "cf_application" {
 }
 
 
-resource "cloudflare_access_policy" "cf_application_policy" {
+resource "cloudflare_access_policy" "service_auth" {
   application_id = cloudflare_access_application.cf_application.id
   account_id     = var.cloudflare_account_id
   name           = "ServiceAuth"
@@ -18,5 +18,18 @@ resource "cloudflare_access_policy" "cf_application_policy" {
 
   include {
     service_token = [cloudflare_access_service_token.app_service_token.id]
+  }
+}
+
+
+resource "cloudflare_access_policy" "github" {
+  application_id = cloudflare_access_application.cf_application.id
+  account_id     = var.cloudflare_account_id
+  name           = "GitHub"
+  precedence     = "2"
+  decision       = "Allow"
+
+  include {
+    emails = var.application_allowed_emails
   }
 }
