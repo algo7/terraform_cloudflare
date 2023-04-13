@@ -33,3 +33,10 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
     }
   }
 }
+
+resource "cloudflare_tunnel_route" "example" {
+  account_id = var.cloudflare_account_id
+  tunnel_id  = cloudflare_tunnel.tunnel_1.id
+  network    = "192.0.2.24/32"
+  comment    = "New tunnel route for documentation"
+}
