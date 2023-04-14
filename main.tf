@@ -19,7 +19,7 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
   config {
 
     origin_request {
-      connect_timeout = "20s"
+      connect_timeout = "30s"
       no_tls_verify   = true
     }
 

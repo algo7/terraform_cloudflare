@@ -27,9 +27,13 @@ resource "cloudflare_access_policy" "github" {
   account_id     = var.cloudflare_account_id
   name           = "GitHub"
   precedence     = "2"
-  decision       = "Allow"
+  decision       = "allow"
 
   include {
-    emails = var.application_allowed_emails
+    email = var.application_allowed_emails
+  }
+
+  require {
+    login_method = ["Github"]
   }
 }
