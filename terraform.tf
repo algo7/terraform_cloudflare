@@ -13,7 +13,8 @@
 *  - Account Permissions (edit):
 *     1. Access: Service Tokens, 
 *     2. Access: Apps and Policies
-*     3. Cloudflare Tunnel
+*     3. Access: Organizations, Identity Providers, and Groups
+*     5. Cloudflare Tunnel
 *  - Zone Permissions (edit):
 *     1. DNS
 * - Cloudflare R2 Bucket
