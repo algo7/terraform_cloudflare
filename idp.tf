@@ -1,5 +1,5 @@
 # Identity Provider: GitHub
-resource "cloudflare_access_identity_provider" "github_oauth" {
+resource "cloudflare_access_identity_provider" "github" {
   account_id = var.cloudflare_account_id
   name       = "GitHub"
   type       = "github"
