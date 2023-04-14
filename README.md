@@ -1,5 +1,5 @@
 ## Description
-This module creates a Cloudflare Tunnel for SSH and Access Application.
+This module creates a Cloudflare Tunnel to expose a local HTTP(s) application and an CF Access Application to protect it.
 This project uses R2 as the backend as it is also compatible with S3.
 Refer to example.config.r2.backend for detailed backend configuration.
 Initialize the backend with `terraform init -backend-config=./config.r2.tfbackend` (remember to change the file name)
