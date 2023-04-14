@@ -20,8 +20,8 @@
 * - Cloudflare R2 Bucket
 * - R2 Access Key and Secret Key with Read/Write permissions
 * ## Notes
-* Cloudflare Terraform Provider as a bug regarding the Cloudflare Tunnel. Please refer to the following link for more details:
-* https://github.com/cloudflare/terraform-provider-cloudflare/issues/2366
+* Cloudflare Terraform Provider has a bug regarding the Cloudflare Tunnel. Please refer to the following link for more details:
+* https://github.com/cloudflare/terraform-provider-cloudflare/issues/2376
 */
 terraform {
   required_providers {
