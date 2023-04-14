@@ -5,3 +5,7 @@ tunnel_name                    = "your-cf-tunnel-name"
 application_name               = "your-cf-app-name"
 application_domain             = "subdomain.your-domain.com"
 application_service_token_name = "your-cf-app-service-token-name"
+tunnel_service_path            = "https://ip:port"
+application_allowed_emails     = ["someone@exampe.com"]
+github_oauth_client_id         = "github_c_id"
+github_oauth_client_secret     = "github_c_secret"
