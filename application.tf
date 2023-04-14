@@ -34,6 +34,6 @@ resource "cloudflare_access_policy" "github" {
   }
 
   require {
-    login_method = ["Github"]
+    login_method = ["GitHub"]
   }
 }
