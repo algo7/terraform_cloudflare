@@ -19,9 +19,13 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
 
   config {
 
+    warp_routing {
+      enabled = true
+    }
+
     origin_request {
-      connect_timeout = "30s"
-      no_tls_verify   = true
+      # connect_timeout = "30s"
+      no_tls_verify = true
     }
 
     ingress_rule {
