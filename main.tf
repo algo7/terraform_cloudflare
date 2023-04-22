@@ -8,6 +8,7 @@ resource "cloudflare_tunnel" "tunnel_1" {
   account_id = var.cloudflare_account_id
   name       = var.tunnel_name
   secret     = random_id.tunnel_secret.hex
+  config_src = "cloudflare"
 }
 
 
