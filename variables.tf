@@ -57,3 +57,9 @@ variable "github_oauth_client_secret" {
   type        = string
   description = "GitHub OAuth Client Secret"
 }
+
+
+variable "access_team_name" {
+  type        = string
+  description = "Name of the team that will be used for the Cloudflare Access Application"
+}

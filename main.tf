@@ -31,6 +31,14 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
     ingress_rule {
       hostname = var.application_domain
       service  = var.tunnel_service_path
+      origin_request {
+        connect_timeout = "30s"
+        access {
+          team_name = var.access_team_name
+          required  = true
+          aud_tag   = [cloudflare_access_application.cf_application.aud]
+        }
+      }
     }
 
     # Catch-all rule to return 404
