@@ -35,6 +35,6 @@ resource "cloudflare_access_policy" "github_oauth" {
 
   require {
     # If you hardcode "GitHub" here, it will fail
-    login_method = [cloudflare_access_identity_provider.github_oauth.id]
+    login_method = [cloudflare_access_identity_provider.github.id]
   }
 }
