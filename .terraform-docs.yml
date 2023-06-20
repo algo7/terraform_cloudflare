@@ -4,3 +4,9 @@ formatter: markdown
 header-from: terraform.tf
 sort:
   enabled: true
+# recursive:
+#   enabled: true
+#   path: submodules
+# output:
+#   file: README.md
+#   mode: replace
