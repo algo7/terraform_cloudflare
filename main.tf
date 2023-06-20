@@ -32,8 +32,9 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
       hostname = var.application_domain
       service  = var.tunnel_service_path
       origin_request {
-        connect_timeout = "50s"
-        no_tls_verify   = true
+        connect_timeout          = "50s"
+        no_tls_verify            = true
+        disable_chunked_encoding = true
         access {
           team_name = var.access_team_name
           required  = true
