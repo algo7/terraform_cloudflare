@@ -1,3 +1,4 @@
+<!-- BEGIN_TF_DOCS -->
 ## Description
 This module creates a Cloudflare Tunnel to expose a local HTTP(s) application and an CF Access Application to protect it.
 This project uses R2 as the backend as it is also compatible with S3.
@@ -26,14 +27,14 @@ https://github.com/cloudflare/terraform-provider-cloudflare/issues/2376
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 4.3.0 |
+| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 4.8.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 4.3.0 |
-| <a name="provider_random"></a> [random](#provider\_random) | 3.4.3 |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 4.7.1 |
+| <a name="provider_random"></a> [random](#provider\_random) | 3.5.1 |
 
 ## Modules
 
@@ -43,20 +44,21 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [cloudflare_access_application.cf_application](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application) | resource |
-| [cloudflare_access_identity_provider.github](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider) | resource |
-| [cloudflare_access_policy.github](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy) | resource |
-| [cloudflare_access_policy.service_auth](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy) | resource |
-| [cloudflare_access_service_token.app_service_token](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_service_token) | resource |
-| [cloudflare_record.cf_tunnel_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
-| [cloudflare_tunnel.tunnel_1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel) | resource |
-| [cloudflare_tunnel_config.tunnel_config_1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config) | resource |
+| [cloudflare_access_application.cf_application](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/access_application) | resource |
+| [cloudflare_access_identity_provider.github](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/access_identity_provider) | resource |
+| [cloudflare_access_policy.github_oauth](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/access_policy) | resource |
+| [cloudflare_access_policy.service_auth](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/access_policy) | resource |
+| [cloudflare_access_service_token.app_service_token](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/access_service_token) | resource |
+| [cloudflare_record.cf_tunnel_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/record) | resource |
+| [cloudflare_tunnel.tunnel_1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel) | resource |
+| [cloudflare_tunnel_config.tunnel_config_1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_config) | resource |
 | [random_id.tunnel_secret](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_access_team_name"></a> [access\_team\_name](#input\_access\_team\_name) | Name of the team that will be used for the Cloudflare Access Application | `string` | n/a | yes |
 | <a name="input_application_allowed_emails"></a> [application\_allowed\_emails](#input\_application\_allowed\_emails) | List of emails that will be allowed to access the Cloudflare Access Application | `list(string)` | n/a | yes |
 | <a name="input_application_domain"></a> [application\_domain](#input\_application\_domain) | Cloudflare Access Application Domain (ex: tunnel.example.com) | `string` | n/a | yes |
 | <a name="input_application_name"></a> [application\_name](#input\_application\_name) | Name of the Cloudflare Access Application you want to use to protect the tunnel | `string` | n/a | yes |
@@ -76,3 +78,4 @@ No modules.
 | <a name="output_service_token"></a> [service\_token](#output\_service\_token) | Cloudflare Access Application Service Token |
 | <a name="output_service_token_id"></a> [service\_token\_id](#output\_service\_token\_id) | Cloudflare Access Application Service Token ID |
 | <a name="output_tunnel_token"></a> [tunnel\_token](#output\_tunnel\_token) | Cloudflare Tunnel Token |
+<!-- END_TF_DOCS -->
