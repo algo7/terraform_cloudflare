@@ -23,10 +23,9 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
       enabled = true
     }
 
-    # origin_request {
-    #   # connect_timeout = "30s"
-    #   no_tls_verify = true
-    # }
+    origin_request {
+      no_tls_verify = true
+    }
 
     ingress_rule {
       hostname = var.application_domain
