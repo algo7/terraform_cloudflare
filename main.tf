@@ -19,14 +19,6 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
 
   config {
 
-    warp_routing {
-      enabled = true
-    }
-
-    origin_request {
-      no_tls_verify = true
-    }
-
     ingress_rule {
       hostname = var.application_domain
       service  = var.tunnel_service_path
@@ -34,6 +26,7 @@ resource "cloudflare_tunnel_config" "tunnel_config_1" {
         connect_timeout          = "50s"
         no_tls_verify            = true
         disable_chunked_encoding = true
+        bastion_mode             = false
         access {
           team_name = var.access_team_name
           required  = true
