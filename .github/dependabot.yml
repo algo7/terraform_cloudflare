@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: 'weekly'
 
-  - package-ecosystem: 'terraform' # See documentation for possible values
-    directory: '/submodules/private_hosted_zones' # Location of package manifests
-    schedule:
-      interval: 'weekly'
+  # - package-ecosystem: 'terraform' # See documentation for possible values
+  #   directory: '/submodules/private_hosted_zones' # Location of package manifests
+  #   schedule:
+  #     interval: 'weekly'
