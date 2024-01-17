@@ -27,13 +27,13 @@ https://github.com/cloudflare/terraform-provider-cloudflare/issues/2376
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 4.18.0 |
+| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 4.22.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 4.18.0 |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 4.22.0 |
 | <a name="provider_random"></a> [random](#provider\_random) | 3.5.1 |
 
 ## Modules
@@ -44,14 +44,14 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [cloudflare_access_application.cf_application](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_application) | resource |
-| [cloudflare_access_identity_provider.github](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_identity_provider) | resource |
-| [cloudflare_access_policy.github_oauth](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_policy) | resource |
-| [cloudflare_access_policy.service_auth](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_policy) | resource |
-| [cloudflare_access_service_token.app_service_token](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_service_token) | resource |
-| [cloudflare_record.cf_tunnel_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/record) | resource |
-| [cloudflare_tunnel.tunnel_1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel) | resource |
-| [cloudflare_tunnel_config.tunnel_config_1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config) | resource |
+| [cloudflare_access_application.cf_application](https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_application) | resource |
+| [cloudflare_access_identity_provider.github](https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_identity_provider) | resource |
+| [cloudflare_access_policy.github_oauth](https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_policy) | resource |
+| [cloudflare_access_policy.service_auth](https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_policy) | resource |
+| [cloudflare_access_service_token.app_service_token](https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_service_token) | resource |
+| [cloudflare_record.cf_tunnel_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/record) | resource |
+| [cloudflare_tunnel.tunnel_1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/tunnel) | resource |
+| [cloudflare_tunnel_config.tunnel_config_1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/tunnel_config) | resource |
 | [random_id.tunnel_secret](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id) | resource |
 
 ## Inputs
